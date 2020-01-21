@@ -1,2 +1,2 @@
 include README.md
-recursive-include wutils
+recursive-include wutils *
