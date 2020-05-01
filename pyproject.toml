@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "with-utils"
-version = "0.2.0"
+version = "0.2.1"
 description = "WITH utils"
 authors = ["Rémy Sanchez <remy.sanchez@with-madrid.com>"]
 license = "WTFPL"
