@@ -4,6 +4,9 @@ version = "0.2.0"
 description = "WITH utils"
 authors = ["Rémy Sanchez <remy.sanchez@with-madrid.com>"]
 license = "WTFPL"
+readme = "README.md"
+homepage = "https://github.com/WithIO/with-utils"
+repository = "https://github.com/WithIO/with-utils"
 
 [tool.poetry.dependencies]
 python = "^3.6"
