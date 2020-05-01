@@ -1,4 +1,4 @@
-from wutils.iter import n_grams, return_list
+from with_utils.iter import n_grams, return_list
 
 
 def test_n_grams():

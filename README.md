@@ -12,7 +12,7 @@ Iteration-related utils
 Provides a way to create n_grams from an iterator
 
 ```python
-from wutils.iter import n_grams
+from with_utils.iter import n_grams
 assert list(n_grams([1, 2, 3, 4], 2)) == [(1, 2), (2, 3), (3, 4)]
 ```
 
@@ -21,7 +21,7 @@ assert list(n_grams([1, 2, 3, 4], 2)) == [(1, 2), (2, 3), (3, 4)]
 Transforms an iterator into a function that returns a list.
 
 ```python
-from wutils.iter import return_list
+from with_utils.iter import return_list
 
 @return_list
 def foo():
