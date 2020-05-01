@@ -1,5 +1,5 @@
 from functools import wraps
-from typing import Iterator, List, Tuple, TypeVar
+from typing import Callable, Iterator, List, Tuple, TypeVar
 
 T = TypeVar("T")
 
@@ -23,7 +23,7 @@ def n_grams(it: Iterator[T], n: int) -> Iterator[Tuple[T, ...]]:
             yield tuple(stack)
 
 
-def return_list(f):
+def return_list(f: Callable[..., Iterator[T]]) -> Callable[..., List[T]]:
     """
     Decorator that converts any iterator-returning function into a
     list-returning function.
@@ -32,7 +32,7 @@ def return_list(f):
     """
 
     @wraps(f)
-    def wrapper(*args, **kwargs) -> List:
+    def wrapper(*args, **kwargs) -> List[T]:
         return list(f(*args, **kwargs))
 
     return wrapper
